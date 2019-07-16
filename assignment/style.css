@@ -1,0 +1,55 @@
+#pendingTasksDiv div{
+    padding: 1%;
+    border: 1px lightgray solid;
+    margin-top: .3em;
+    background-color: #007bff;
+}
+
+#completedTasksDiv div{
+    padding: 1%;
+    border: 1px lightgray solid;
+    margin-top: .3em;
+    background-color: #007bff;    
+}
+
+#pendingTasksDiv div span{
+    padding-left: 5%;
+}
+
+#pendingTasksDiv div button{
+    font-size: 75%;
+    font-family: inherit;
+    font-weight: lighter;
+    border: 0;
+    padding: 0;
+    padding-left: 5px;
+    margin-left: 65%;
+    background-color: #007bff;
+    color: #b2d7ff;
+}
+
+
+
+#completedTasksDiv div button{
+    font-size: 75%;
+    font-family: inherit;
+    font-weight: lighter;
+    border: 0;
+    padding: 0;
+    padding-left: 5px;
+    margin-left: 65%;
+    background-color: #007bff;
+    color: #b2d7ff;
+}
+
+#completedTasksDiv div span{
+    padding-left: 5%;
+}
+
+#pendingTasksDiv div input{
+    margin-left: 1%;
+}
+
+#completedTasksDiv div input{
+    margin-left: 1%;
+}
