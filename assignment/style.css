@@ -5,6 +5,7 @@
     background-color: #007bff;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 #completedTasksDiv div{
@@ -14,6 +15,7 @@
     background-color: #007bff;
     display: flex;    
     justify-content: space-between;
+    align-items: center;
 }
 
 #pendingTasksDiv div span{
