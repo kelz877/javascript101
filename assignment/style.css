@@ -1,76 +1,12 @@
-#pendingTasksDiv div{
-    padding: 1%;
-    border: 1px lightgray solid;
-    margin-top: .3em;
-    background-color: #007bff;
+.itemInfo {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#completedTasksDiv div{
-    padding: 1%;
-    border: 1px lightgray solid;
-    margin-top: .3em;
-    background-color: #007bff;
-    display: flex;    
-    justify-content: space-between;
-    align-items: center;
-}
-
-#pendingTasksDiv div span{
+    flex-direction: column;
+    justify-content: center;
     padding-left: 5%;
-    display: flex;
-    flex-direction: row;
 }
 
-#pendingTasksDiv div button{
-    font-size: 75%;
-    font-family: inherit;
-    font-weight: lighter;
-    border: 0;
-    padding: 0;
-    padding-left: 5px;
-    background-color: #007bff;
-    color: #b2d7ff;
-    display: flex;
-    flex-direction: row;
-}
-
-
-
-#completedTasksDiv div button{
-    font-size: 75%;
-    font-family: inherit;
-    font-weight: lighter;
-    border: 0;
-    padding: 0;
-    padding-left: 5px;
-    background-color: #007bff;
-    color: #b2d7ff;
-    display: flex;
-    flex-direction: row;
-
-}
-
-#completedTasksDiv div span{
-    padding-left: 5%;
-    display: flex;
-    flex-direction: row;
-}
-
-#pendingTasksDiv div input{
-    margin-left: 1%;
-    display: flex;
-    flex-direction: row;
-}
-
-#completedTasksDiv div input{
-    margin-left: 1%;
-    display: flex;
-    flex-direction: row;
-}
-
-.checkBoxNew{
-    outline: none;
+.menuItemNew {
+    border: 1px lightgray solid;
+    padding-left: 4%;
+    margin-bottom: 5px;
 }

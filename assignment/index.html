@@ -1,41 +1,64 @@
 <!DOCTYPE html>
 <html>
     <head>
-
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <title>Restaurant Menu</title>
         <link rel="stylesheet" href="style.css">
-        <title>To Do List</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/css/uikit.min.css" />
 
     </head>
-    <body class="container">
-        <h1 class="mx-auto">To Do List</h1>
-        <div class="col-sm" style="width: 30rem;">
-            <div class="list-group list-group-flush">
-                <div class="list-group-item" id="enterTaskContainter">
-                    <span>Enter Task</span>
-                    <input id="enterTaskBox" type="text"    placeholder="Please add a task">
-                    <button id="addButton" type="button" class="btn btn-primary btn-sm">Add</button>
-                </div>
-            </div>
-        
-        <div class="list-group-item">
-            <h4 class="text-secondary">Pending Tasks</h4>
-            <div id="pendingTasksDiv" class="text-light">
+    
+    <body class="uk-background-muted">
+    <div class="menuContent uk-container uk-container-small">   
+      <h1 class="uk-heading-line uk-margin-top uk-text-center"><span>Menu</span></h1>
+        <p class="uk-heading-bullet uk-visible@s">We take garden fresh seriously, offering you a farm to table dining experience. Our ingredients are found locally, using only the best organic suppliers available. Check out our popular lunch salad buffet.</p>
 
-            </div>
+        <div id="menuDiv" class="uk-container uk-container-small">
+            <ul uk-accordion="multiple: true">
+                <li class ="uk-open">
+                    <a class="uk-accordion-title uk-text-large uk-text-center" href="#">Starters</a>
+                    <div class="uk-accordion-content">
+                        <div id="startersDiv"></div>
+                    </div>
+                </li>
+                <li class ="uk-open ">    
+                    <a class="uk-accordion-title uk-text-large uk-text-center" href="#">Entrees</a>
+                    <div class="uk-accordion-content">           
+                        <div id="entreesDiv"></div>
+                    </div>
+                </li>
+                <li class ="uk-open">    
+                    <a class="uk-accordion-title uk-text-large uk-text-center" href="#">Desserts</a>
+                    <div class="uk-accordion-content">           
+                        <div id="dessertsDiv"></div>
+                    </div>
+                </li>
+                </li>
+            </ul>
         </div>
-        <div class="list-group-item">
-            <h4 class="text-secondary">Completed Tasks</h4>
-            <div id="completedTasksDiv" class="text-light"></div>
+    </div> 
+    <footer>
+        <div>
+            <ul class="uk-iconnav uk-position-relative uk-position-center uk-margin-medium-top">
+                <li><a href="#" uk-icon="twitter"></a></li>
+                <li><a href="#" uk-icon="facebook"></a></li>
+                <li><a href="#" uk-icon="instagram"></a></li>
+                <li><a href="#" uk-icon="yelp"></a></li>
+                <li><a href="#" uk-icon="mail"></a></li>
+            </ul>
+
         </div>
-        </div>
-        <script src ="app.js"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </footer>
+
+
+
+
     </body>
+    <script src="dishes.js"></script>
+    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/js/uikit-icons.min.js"></script>
+    <script src="uikit/dist/js/uikit-icons.min.js"></script>
 
-
-</html>
+    </html>
+    
