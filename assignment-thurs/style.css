@@ -1,0 +1,56 @@
+@-ms-viewport{
+    width: device-width;
+  }
+  body {
+      background-color: rgb(249, 239, 227);
+  }
+header {
+    text-align: center;
+}
+
+.photo {
+    height: 200px;
+    width: auto;
+}
+
+
+main {
+    display: grid;
+}
+.mainContainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 10px;
+    row-gap: 10px;
+
+
+}
+
+.articleContainer {
+    display: grid;
+    border: gray solid 2px;
+    grid-template-rows: minmax(100px, auto);
+    padding: 1em;
+    justify-items: center;    
+    text-align: center;
+}
+
+.authorName {
+    font-style: italic;
+}
+
+.newsTitle {
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px){
+    .mainContainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+    }
+    header {
+        text-align: center;
+    }
+
+
+}
