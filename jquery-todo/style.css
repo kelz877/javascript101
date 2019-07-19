@@ -1,3 +1,69 @@
+h1 {
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 3rem;
+    border-bottom: 5px black solid;
+    border-radius: 10px;
+    border-bottom-style: groove;
+}
+
+h3 {
+    font-family: 'Cabin Sketch', cursive;    
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+#addButton {
+    background-color: #008CBA;
+    font-size: 16px;
+    border-radius: 8px;
+    color: antiquewhite;
+    letter-spacing: .1em;
+    padding: 5px 12px;
+}
+
+#mainBody {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#enterTaskDiv {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+}
+
+#textInputTask {
+    font-size: .6rem;    
+}
+
+#taskTitleBox {
+    font-size: 1rem;
+}
+
 .classDiv {
     background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+/*
+#taskCompletedDiv {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+} */
+
+.taskListClass {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
