@@ -1,0 +1,56 @@
+@-ms-viewport{
+    width: device-width;
+  }
+
+
+#movieList {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+body {
+    background-color: lightblue;
+}
+
+header {
+    text-align: center;
+}
+
+#contentBody {
+    display: grid;
+
+}
+
+#movieList{
+    display: grid;
+    text-align: center;
+    margin-top: 1em;
+}
+
+
+#movieDetails{
+    display: grid;
+    text-align: center;
+    border: black solid 2px;
+}
+
+.movieInfo {
+    display: grid;
+    /*grid-template-rows: minmax(100px, auto); */
+    border: 1px black solid;
+    justify-items: center;
+    text-align: center;
+}
+
+img {
+    width: 200px;
+    height: auto;
+}
+
+@media only screen and (max-width: 600px){
+    #movieList {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+    }
+}
